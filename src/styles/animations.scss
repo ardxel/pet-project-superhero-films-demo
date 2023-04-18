@@ -1,0 +1,92 @@
+@mixin animationCustom($name, $duration, $timing: linear) {
+  transition: all $duration $timing;
+  animation: $name $duration $timing;
+}
+@mixin transitionCustom($duration, $timing: linear) {
+  transition: all $duration $timing;
+}
+$fast: 0.075s;
+$normal: 0.15s;
+$slow: 0.3s;
+$verySlow: 0.5s;
+
+@keyframes flash {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes openWithOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes closeWithOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes showLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes showLeftAbsolute {
+  from {
+    left: -50px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes showRightAbsolute {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes showFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showInfoMovieCart {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(25%);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

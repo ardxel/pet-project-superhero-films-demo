@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@reduxproj/*": ["src/redux/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@forms/*": ["src/forms/*"],
+      "@images/*": ["src/assets/images/*"],
+      "@styles/*": ["src/styles/*"],
+      "@models/*": ["src/models/*"],
+      "@common/*": ["src/common/*"],
+      "@tools/*": ["src/common/tools/*"],
+      "@constants/*": ["src/constants/*"],
+      "@data/*": ["data/*"]
+    },
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./",
+    "outDir": "./build/",
+    "useUnknownInCatchVariables": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": false
+  },
+  "include": [
+    "src",
+    "./src/library/modules.d.ts",
+    "./src/library/global.d.ts",
+    "./config/webpack.mock.ts"
+  ]
+}

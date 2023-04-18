@@ -1,0 +1,6 @@
+.main {
+  @apply mt-[90px]  w-full h-full xl:mt-[110px];
+  .container {
+    @apply max-w-[1280px] mx-auto relative flex flex-col;
+  }
+}
