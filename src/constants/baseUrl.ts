@@ -1,8 +1,3 @@
-// if you want to test the application on a smartphone or any other device
-// add your private ip address
-// for example http://192.168.0.103:5000
-const myUrl = 'http://192.168.0.103:5000';
-
-const BASE_URL = myUrl || 'http://localhost:5000';
+const BASE_URL = 'https://superhero-films-express.vercel.app/';
 
 export default BASE_URL;
