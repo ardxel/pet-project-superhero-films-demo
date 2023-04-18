@@ -5,9 +5,15 @@ import { classes } from '@tools/index';
 interface LoadingProps {
   style?: React.CSSProperties;
   className?: string;
+  size?: number;
 }
 
 const Loading: React.FC<LoadingProps> = (props) => {
+
+  const sizes = props.size 
+    ? {width: `${props.size}px`, height: `${props.size}px`}
+    : undefined
+
   return (
     <div
       className={classes(styles.loading, props.className)}
