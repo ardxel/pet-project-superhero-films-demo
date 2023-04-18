@@ -17,7 +17,7 @@ const Loading: React.FC<LoadingProps> = (props) => {
   return (
     <div
       className={classes(styles.loading, props.className)}
-      style={props.style}
+      style={{...props.style, ...sizes}}
       id='loading-spinner'
       data-testid="loading"
     >
